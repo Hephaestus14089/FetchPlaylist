@@ -23,7 +23,3 @@ def download_playlist():
         videoObj = videoObjList[i]
         print(f"Downloading {videoObj.title} ...")
         download_video(videoObj)
-
-if __name__=='__main__':
-    # link = input("Enter youtube video url: ")
-    link = "https://www.youtube.com/watch?v=NzLMzbR2JJw&list=PLWvnUfModHP_99Pr-xBNKDZUcJFm7H9m8"
