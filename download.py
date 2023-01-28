@@ -1,6 +1,7 @@
 from pytube import contrib
 from pytube import YouTube
 from pytube.cli import on_progress
+from system import create_destination
 
 def get_playlist(link):
    return contrib.playlist.Playlist(link)
@@ -25,6 +26,7 @@ def download_playlist(link):
    try:
       playlistTitle = playlistObj.title
       print(f'Playlist found: "{playlistTitle}"')
+      create_destination(playlistTitle)
    except:
       print("Error: Unable to find playlist\t:(")
       return None
