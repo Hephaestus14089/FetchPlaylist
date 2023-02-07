@@ -1,0 +1,12 @@
+1. Option for user to specify destination directory to store downloaded videos.
+
+2. Download quietly. (-q / --quiet)
+
+3. A Keyboard Interrupt to skip a single video, and another to exit the whole process.
+
+4. Create cache in the destination directory so that in case of an incomplete download of the same playlist earlier, the script can get the data showing where the process was exited and can continue. (User must specify the directory of cache)
+   This feature necessitates an option for a fresh download (ignoring cache if present).
+
+5. Options to: ignore cache if present, and ignore and remove cache.
+
+6. Reset default destination directory for downloading.
